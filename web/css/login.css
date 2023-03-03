@@ -1,0 +1,255 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+:root {
+    --primary: #06A3DA;
+    --secondary: #F57E57;
+    --light: #EEF9FF;
+    --dark: #091E3E;
+    --dark2: #0E4156;
+}
+
+.sign-container{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background: linear-gradient(179.05deg, #219EBC 0.81%, rgba(184, 232, 177, 0) 112.26%);
+}
+.login-form{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: #ffff;
+    width: 581px;
+    height: 616px;
+    text-align: center;
+}
+.body{
+    margin: 0 30px 0px 37px;
+}
+.body h3{
+    font-weight: 700;
+    font-size: 24px;
+    color: #219EBC;
+    margin-top: 18px;
+}
+.body h5{
+    font-weight: 700;
+    font-size: 20px;
+    color: var(--dark2);
+}
+.body p{
+    font-weight: 700;
+    font-size: 16px;
+    color: var(--dark2);
+    margin-top: 8px;
+}
+.names{
+    display: flex;
+    margin-top: 25px;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    gap: 32px;
+    text-align: left;
+}
+.body h2{
+    font-weight: 400;
+    font-size: 14px;
+}
+.names input{
+    width: 239px;
+    height: 41px;
+    border: 1px solid #000000;
+    outline: none;
+    padding-left: 5px;
+}
+.email{
+    width: 100%;
+    text-align: left;
+    margin-top: 15px;
+}
+.email input{
+    width: 100%;
+    height: 41px;
+    border: 1px solid #000000;
+    outline: none;
+    padding-left: 5px;
+}
+.personal{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    gap: 32px;
+    text-align: left;
+    margin-top: 15px;
+}
+.contry select{
+    width: 239px;
+    height: 41px;
+    border: 1px solid #000000;
+    outline: none;
+}
+.phone input{
+    width: 239px;
+    height: 41px;
+    border: 1px solid #000000;
+    outline: none;
+    padding-left: 5px;
+}
+.submit {
+    width: 100%;
+    margin-top: 15px;
+}
+.submit button{
+    width: 100%;
+    padding: 11px 0px 11px 0px;
+    outline: none;
+    border: none;
+    background: #219EBC;
+    color: #ffff;
+    font-weight: 700;
+    font-size: 14px;
+    cursor: pointer;
+}
+.submit button:hover{
+    border: 1px solid #219EBC;
+    color: #219EBC;
+    background: #ffffff;
+}
+.log {
+    width: 100%;
+    position:relative ;
+}
+.log p{
+ position: absolute;
+ right: 0;
+ font-weight: 700;
+ font-size: 14px;
+ color: #000000;
+}
+.log span{
+    font-style: italic;
+    font-weight: 700;
+    font-size: 14px;
+    color: #18333e;
+    cursor: pointer;
+    margin-left: 25px;
+}
+
+.login-container{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background: linear-gradient(179.05deg, #219EBC 0.81%, rgba(184, 232, 177, 0) 112.26%);
+}
+
+.log-form{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: #ffff;
+    width: 581px;
+    height: auto;
+    text-align: center; 
+}
+.log-body{
+    margin: 0 30px 0px 37px;
+}
+.log-body p{
+    font-weight: 700;
+    font-size: 16px;
+    color: var(--dark2);
+    margin-top: 8px;
+}
+.log-body h3{
+    font-weight: 700;
+    font-size: 24px;
+    color: #219EBC;
+    margin-top: 18px;
+}
+.log-body h5{
+    font-weight: 700;
+    font-size: 20px;
+    color: var(--dark2);
+}
+.username{
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+}
+.log-body h2{
+    font-weight: 400;
+    font-size: 14px;
+}
+.log-btn{
+    margin-bottom: 94px;
+}
+.username input{
+    width: 100%;
+    height: 41px;
+    border: 1px solid #000000;
+    outline: none;
+    padding-left: 5px;
+}
+.password,.username{
+    margin-top: 30px;
+    text-align: left;
+}
+.password input{
+    width: 100%;
+    height: 41px;
+    border: 1px solid #000000;
+    outline: none;
+    padding-left: 5px;
+}
+.submit-btn {
+    width: 100%;
+    margin-top: 15px;
+}
+.submit-btn button{
+    width: 100%;
+    padding: 11px 0px 11px 0px;
+    outline: none;
+    border: none;
+    background: #219EBC;
+    color: #ffff;
+    font-weight: 700;
+    font-size: 14px;
+    cursor: pointer;
+}
+.submit-btn button:hover{
+    border: 1px solid #219EBC;
+    color: #219EBC;
+    background: #ffffff;
+}
+.bottom{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.log-btn p{
+    font-weight: 700;
+    font-size: 14px;
+    color: #000000;
+}
+.bottom .forget p{
+    font-weight: 700;
+    font-size: 14px;
+}
+.log-btn span{
+    margin-left: 25px;
+}
+ a{
+    text-decoration: none;
+    font-style: italic;
+    font-weight: 700;
+    font-size: 14px;
+    color: var(--dark2);
+}
