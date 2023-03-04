@@ -1,124 +1,88 @@
-(function ($) {
-    "use strict";
+var auth_add_body = document.getElementById("auth-add");
+        var add_fields = document.getElementById("add");
 
-    // Spinner
-    var spinner = function () {
-        setTimeout(function () {
-            if ($('#spinner').length > 0) {
-                $('#spinner').removeClass('show');
-            }
-        }, 1);
-    };
-    spinner();
-    
-    
-    // Initiate the wowjs
-    new WOW().init();
-
-
-    // Sticky Navbar
-    $(window).scroll(function () {
-        if ($(this).scrollTop() > 40) {
-            $('.navbar').addClass('sticky-top');
-        } else {
-            $('.navbar').removeClass('sticky-top');
+        function removeInput(){
+            this.parentElement.remove();
         }
-    });
-    
-    // Dropdown on mouse hover
-    const $dropdown = $(".dropdown");
-    const $dropdownToggle = $(".dropdown-toggle");
-    const $dropdownMenu = $(".dropdown-menu");
-    const showClass = "show";
-    
-    $(window).on("load resize", function() {
-        if (this.matchMedia("(min-width: 992px)").matches) {
-            $dropdown.hover(
-            function() {
-                const $this = $(this);
-                $this.addClass(showClass);
-                $this.find($dropdownToggle).attr("aria-expanded", "true");
-                $this.find($dropdownMenu).addClass(showClass);
-            },
-            function() {
-                const $this = $(this);
-                $this.removeClass(showClass);
-                $this.find($dropdownToggle).attr("aria-expanded", "false");
-                $this.find($dropdownMenu).removeClass(showClass);
-            }
-            );
-        } else {
-            $dropdown.off("mouseenter mouseleave");
-        }
-    });
-    
-    
-    // Back to top button
-    $(window).scroll(function () {
-        if ($(this).scrollTop() > 100) {
-            $('.back-to-top').fadeIn('slow');
-        } else {
-            $('.back-to-top').fadeOut('slow');
-        }
-    });
-    $('.back-to-top').click(function () {
-        $('html, body').animate({scrollTop: 0}, 1500, 'easeInOutExpo');
-        return false;
-    });
+        
+        add_fields.onclick =function(){
+            var auth_name = document.createElement("input");
+            auth_name.type="text"
+            auth_name.name="authname[]";
+
+            var auth_insitute = document.createElement("input");
+            auth_insitute.type="text";
+            auth_insitute.name="institute[]";
+
+            var auth_radio = document.createElement("input");
+            auth_radio.type="radio";
+            auth_radio.name="auth_type";
+            auth_radio.value="main";
+
+                //remove author
+            const btn=document.createElement("div");
+            btn.className="delete";
+           
+            const btn_icon = document.createElement("button");
+            btn_icon.type="button";
+            btn_icon.className="btn_icon";
+            btn_icon.innerHTML="&times";
+            
+            btn.addEventListener("click",removeInput);
+                //remove author
+
+            const auth=document.createElement("div");
+            auth.className="auth";
+
+            
+            /*const label1=document.createElement("label");
+            label1.type="label";
+            label1.className="label1";
+            label1.for="opt1";
+            label1.innerHTML="main";*/
+            const names=document.createElement("div");
+            names.className="names";
+
+            const auth_selection=document.createElement("div");
+            auth_selection.className="auth-selection";
+
+            const institues=document.createElement("div");
+            institues.className="institues";
+
+            const main=document.createElement("div");
+            main.className="main";
+
+            names.appendChild(auth_name);
+            institues.appendChild(auth_insitute);
+            main.appendChild(auth_radio);
+            btn.appendChild(btn_icon)
+            auth.appendChild(names);
+            auth.appendChild(institues);
+            auth_selection.appendChild(main);
+            auth.appendChild(auth_selection);
+            //main.appendChild(label1);
+            auth.appendChild(btn);
+            auth_add_body.appendChild(auth);
+        };
 
 
-    // Date and time picker
-    $('.date').datetimepicker({
-        format: 'L'
-    });
-    $('.time').datetimepicker({
-        format: 'LT'
-    });
+        /**************tags input****************/
+        document.querySelector("#add-tag").onclick = 
+        function(){
+            document.querySelector("#tag-area").innerHTML
+            += `<div class="single-tag">
+                    <span id="tagname">
+                        ${document.querySelector("#tags-input input").value}
+                        <i class="fas fa-xmark remove" ></i>
+                    </span>
+                </div>`;
 
-
-    // Image comparison
-    $(".twentytwenty-container").twentytwenty({});
-
-
-    // Price carousel
-    $(".price-carousel").owlCarousel({
-        autoplay: true,
-        smartSpeed: 1500,
-        margin: 45,
-        dots: false,
-        loop: true,
-        nav : true,
-        navText : [
-            '<i class="bi bi-arrow-left"></i>',
-            '<i class="bi bi-arrow-right"></i>'
-        ],
-        responsive: {
-            0:{
-                items:1
-            },
-            768:{
-                items:2
-            }
-        }
-    });
-
-
-    // Testimonials carousel
-    $(".testimonial-carousel").owlCarousel({
-        autoplay: true,
-        smartSpeed: 1000,
-        items: 1,
-        dots: false,
-        loop: true,
-        nav : true,
-        navText : [
-            '<i class="bi bi-arrow-left"></i>',
-            '<i class="bi bi-arrow-right"></i>'
-        ],
-    });
-    
-})(jQuery);
-
-
-//
+                var tags = document.querySelectorAll('.remove');
+                for(var i = 0; i< tags.length;i++){
+                    tags[i].onclick=function(){
+                        this.parentNode.remove();
+                    };
+                }
+                document.querySelector("#tags-input input").value="";
+        };
 

@@ -120,7 +120,7 @@
                                     <h3>author type</h3>
                                     <div class="main">
                                         <input type="radio" value="main" name="auth_type" id="opt1">
-                                        <!-- <label for="opt1" class="label1">main </label>  -->
+                                         <!-- <label for="opt1" class="label1">main </label>   -->
                                     </div>
                                 </div>
                                 <!--add mulriple authors-->
@@ -149,15 +149,27 @@
                             <textarea>  </textarea>
                         </div>
                     </div>
+
                      <!--add keywords-->
                     <div class="add-tags">
                         <div class="tags-body">
-                            <h3>Add Some Tags :</h3>
+                            <h3>Add keywords :</h3>
                             <div class="tag">
-                                <input type="text">
-                                <div class="tags-area">
-    
+                                <div class="tag-input" >
+                                    <div id="tags-input">
+                                       <input type="text"> 
+                                    </div>
+                                    <div class="right">
+                                        <i class="fa-solid fa-square-check" id="add-tag"></i>
+                                    </div>
                                 </div>
+                                <div class="tag-container">
+                                    <div class="tags-area" >
+                                    <div class="tag-area-body" id="tag-area">
+                                    </div>
+                                </div>
+                                </div>
+                                
                             </div>
                         </div>
                     </div>
@@ -236,76 +248,9 @@
         hamba.onclick = function () {
             navitem = document.querySelector(".nav-bar");
             navitem.classList.toggle("active");
-        }
+        };
         //navigation end
-
-
-        var auth_add_body = document.getElementById("auth-add");
-        var add_fields = document.getElementById("add");
-
-        function removeInput(){
-            this.parentElement.remove();
-        }
-        
-        add_fields.onclick =function(){
-            var auth_name = document.createElement("input");
-            auth_name.type="text"
-            auth_name.name="authname[]";
-
-            var auth_insitute = document.createElement("input");
-            auth_insitute.type="text";
-            auth_insitute.name="institute[]";
-
-            var auth_radio = document.createElement("input");
-            auth_radio.type="radio";
-            auth_radio.name="auth_type";
-            auth_radio.value="main";
-           
-
-                //remove author
-            const btn=document.createElement("div");
-            btn.className="delete";
-           
-            const btn_icon = document.createElement("button");
-            btn_icon.type="button";
-            btn_icon.className="btn_icon";
-            btn_icon.innerHTML="&times";
-            
-            btn.addEventListener("click",removeInput);
-                //remove author
-
-            const auth=document.createElement("div");
-            auth.className="auth";
-
-            /*const label1=document.createElement("label");
-            label1.type="label";
-            label1.className="label1";
-            label1.for="opt1";
-            label1.innerHTML="main";*/
-            const names=document.createElement("div");
-            names.className="names";
-
-            const institues=document.createElement("div");
-            institues.className="institues";
-
-            const main=document.createElement("div");
-            main.className="main";
-
-            names.appendChild(auth_name);
-            institues.appendChild(auth_insitute);
-            main.appendChild(auth_radio);
-            btn.appendChild(btn_icon)
-            auth.appendChild(names);
-            auth.appendChild(institues);
-            auth.appendChild(main);
-            //main.appendChild(label1);
-            auth.appendChild(btn);
-            auth_add_body.appendChild(auth);
-
-            
-
-
-        }
     </script>
+    <script src="js/main.js"></script>
 </body>
 </html>
