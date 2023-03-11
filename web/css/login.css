@@ -26,19 +26,19 @@
     left: 50%;
     transform: translate(-50%,-50%); */
     
-    max-width: 100%;
+    width: 550px;
     height: auto;
     text-align: center;
+    /* border: 1px solid rgb(200, 255, 0); */
 }
 .login-form form{
-    max-width: 581px;
-    height: auto;
+    
+    height: 100%;
     background: #ffff;
+    /* border: 1px solid red; */
 }
 .body{
-    margin: 0 30px 0px 37px;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    margin: 0 10px 0px 10px;
 }
 .body h3{
     font-weight: 700;
@@ -66,9 +66,7 @@
     gap: 32px;
     text-align: left;
 }
-.n-input{
-    /* border: 1px solid red; */
-}
+
 
 .body h2{
     font-weight: 700;
@@ -176,19 +174,19 @@ input::-webkit-outer-spin-button{
 }
 
 .log-form{
-    max-width: 100%;
+    width: 550px;
     height: auto;
     text-align: center;
 }
 .log-form form{
-    max-width:700px;
-    height: auto;
+    height: 100%;
     background: #ffff;
     margin: 0 25px 25px 25px;
-    padding: 50px;
+   padding-top: 10px;
 }
 .log-body{
-    margin: 0 30px 0px 37px;
+    margin: 0 10px 0px 10px;
+    text-align: center;
 }
 .log-body p{
     font-weight: 700;
@@ -225,10 +223,6 @@ input::-webkit-outer-spin-button{
     border: 1px solid #000000;
     outline: none;
     padding-left: 5px;
-}
-.bottom{
-    flex-direction: column;
-    text-align: left;
 }
 .password,.username{
     margin-top: 30px;
@@ -268,7 +262,7 @@ input::-webkit-outer-spin-button{
 }
 .log-btn p{
     font-weight: 700;
-    font-size: 14px;
+    font-size: 12px;
     color: #000000;
 }
 .bottom .forget p{
@@ -276,7 +270,7 @@ input::-webkit-outer-spin-button{
     font-size: 14px;
 }
 .log-btn span{
-    margin-left: 25px;
+    margin-left: 0px;
 }
  a{
     text-decoration: none;
@@ -295,7 +289,7 @@ input::-webkit-outer-spin-button{
     padding-top: 25px;
     }
     .login-form form{
-        margin: 0 25px 25px 25px;
+        margin: 50px 5px 25px 5px;
     }
     .names{
         grid-template-columns: 1fr;
@@ -307,12 +301,15 @@ input::-webkit-outer-spin-button{
         text-align: left;
     }
     .log-form form{
-
-        padding: 10px;
+        margin: 0px 10px 10px 10px;
+        padding-top: 10px;
+    }
+    .login-form form{
+        margin: 50px 10px 10px 10px;
     }
 }
 @media screen and (max-width:420px){
     .login-form form{
-        margin: 0 10px 10px 10px;
+        margin: 25px 10px 10px 10px;
     }
 }
