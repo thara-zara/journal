@@ -26,6 +26,9 @@ body{
     align-items: center;
     justify-content: space-between;
     height: 361px;
+    max-width: 1200px;
+    margin: 0 auto;
+    /* border: 1px solid red; */
 }
 .submit-hero-left {
     width: 50%;
@@ -67,11 +70,17 @@ body{
     background: #ffff;
 }
 .form{
-    width: 100%;
+    display: flex;
+    max-width: 1200px;
+    /* border: 1px solid red; */
+    margin: 0 auto;
 }
 .form-body{
     background: #FEFEFE;
-    margin: 0 18px 0 30px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    /* margin: 0 18px 0 30px; */
+    width: 100%;
     /* border: 1px solid red; */
 }
 .form-body form{
@@ -114,6 +123,7 @@ body{
     width: 100%;
     display: flex;
     flex-direction: column;
+    /* border: 1px solid rgb(0, 255, 98); */
 }
 .auth {
     margin-left: 37px;
@@ -227,7 +237,9 @@ body{
     
 /**********************************/
 
-
+.req{
+    color: red;
+}
 /************tags*****************/
 .add-tags {
    margin-top: 50px; 
@@ -373,7 +385,7 @@ body{
     display: flex;
 }
 .document .document-upload{
-    margin-left: 78px;
+    margin-left: 10px;
     position: relative;
 }
 
@@ -383,12 +395,12 @@ body{
     left: 0;
     top: 0;
     opacity: 0;
-    width: 355px;
-    height: 46px;
+    width: 300px;
+    height: 50px;
  }
  .doc-custom{
-    width: 355px;
-    height: 46px;
+    width: 300px;
+    height: 50px;
     background: #F0F0F0;
      display: flex;
      align-items: center;
@@ -510,7 +522,19 @@ body{
     }
     .auth {
         margin-top: 10px;
+        margin-left: 0;
+        gap: 25px;
     }
+    .auth .names{
+        width: 35%;
+    }
+    .auth .institues{
+        width: 35%;
+    }
+    .add-input h3{
+        display: none;
+    }
+
     .upload-photo{
         flex-direction: column;
     }
@@ -531,6 +555,11 @@ body{
         margin-top: 10px;
         margin-left: 0;
     }
+    .submit-hero-left .top{
+        position: absolute;
+        top:22px;
+        left: 25px;
+     }
 }
 
 @media screen  and (max-width:600px){
@@ -556,23 +585,65 @@ body{
     }
     .form-body .area input{
         margin-top: 10px;
-        height: 30px;
+        height: 35px;
     }
     .topic{
         margin-top: 25px;
     }
     .authors{
         margin-top:25px;
+        width: 100%;
+        /* border: 1px solid red; */
+        position: relative;
+        display: flex;
+        flex-direction: column;
     }
-    .auth .name input{
-        height: 30px;
+  
+    .add-input{
+        position: absolute;
+        top: 0;
+        left: 30%;
     }
-    .auth .institue input{
-        height: 30px;
-        margin-left: 11px;
+    .add-input i{
+        font-size:12px;
     }
+ 
+    .auth .names{
+        width: 35%;
+    }
+    .auth .institues{
+        width: 35%;
+    }
+    .auth .names input{
+        height: 35px;
+    }
+    .auth .institues input{
+        height: 35px;
+        margin-left: 0px;
+        /* border: 1px solid red; */
+    }
+    .auth-selection{
+        text-align: left;
+    }
+    .tags-body{
+        display: flex;
+        flex-direction: column;
+    }
+    .tag-input{
+        margin-left: 0;
+    }
+    .tags-area{
+        width: 150%;
+        height:auto;
+        /* border: 1px solid rgb(199, 28, 28); */
+    }
+
+
     .upload-photo{
         margin-top: 25px;
+    }
+    .upload-photo .photo{
+        margin-left: 0;
     }
     .upload-photo .photo input[type=file]{
         font-size: 25px;
@@ -616,8 +687,20 @@ body{
         padding: 5px 25px 5px 25px;
         font-size: 14px;
      }
+     .form-body form {
+        margin: 20px 10px 0px 10px;
+     }
 
 }
+
+/* @media screen  and (max-width:440px){
+    .auth .names input{
+        width: 110px;
+    }
+    .auth .institues input{
+        width: 110px;
+    }
+} */
 
 
 

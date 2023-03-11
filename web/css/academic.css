@@ -14,6 +14,10 @@
 .academic-container{
     width: 100%;
 }
+.ac{
+    max-width: 1200px;
+    margin: 0 auto;
+}
 .link{
   margin-left: 17px;
   margin-top: 25px;
@@ -101,7 +105,8 @@
 }
 .table-body{
     position: relative;
-    margin:25px 17px 50px 17px;
+    margin:25px 0px 50px 0px;
+    z-index: 1;
 }
 
 

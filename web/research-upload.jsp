@@ -44,6 +44,22 @@
             <div class="menu">
                 <i class="fas fa-bars"></i>
             </div>
+            <div class="res-nav-container">
+                <div class="rsponsive-nav">
+                    <div class="responsive-nav-links">
+                        <i class="fa-solid fa-xmark"></i>
+                        <ul>
+                            <a href="#"><li>Research Topics</li></a>
+                            <a href="#"> <li>Publications</li></a>
+                            <a href="#"><li>Help</li></a>
+                            <a href="#"><li>About Us</li></a>
+                            <a href="#"><li>Contact Us</li></a>
+                            <a href="#"><li><img src="img/icon/shopping-cart-30.png"></li> </a>
+                            <a href="login.jsp"></a> <li><img src="img/icon/icons8-user-30.png"></li> </a> 
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
         <!-- top bar end-->
     
@@ -62,8 +78,8 @@
                     </div>
                 </div>
                 <div class="nav-right">
-                    <img src="img/icon/shopping-cart-30.png">
-                    <img src="img/icon/icons8-user-30.png">
+                    <a href="#"><img src="img/icon/shopping-cart-30.png"></a>    
+                    <a href="login.jsp"><img src="img/icon/icons8-user-30.png"></a>  
                 </div>
             </div>
         </div>
@@ -92,7 +108,7 @@
             <div class="form-body">
                 <form>
                     <div class="area">
-                        <h3>Research Area * : </h3>
+                        <h3>Research Area <span class="req">*</span> : </h3>
                         <input type="text">
                     </div>
                     <div class="area topic">
@@ -117,7 +133,7 @@
                                 </div>
                                 <!--author select-->
                                 <div class="auth-selection">
-                                    <h3>author type</h3>
+                                    <h3> type</h3>
                                     <div class="main">
                                         <input type="radio" value="main" name="auth_type" id="opt1">
                                          <!-- <label for="opt1" class="label1">main </label>   -->
@@ -125,7 +141,7 @@
                                 </div>
                                 <!--add mulriple authors-->
                                 <div class="add-input">
-                                    <h3>New Author</h3>
+                                    <!-- <h3>New Author</h3> -->
                                     <span id="add"><i class="fa-solid fa-plus"></i></span>
                                 </div>
                             </div>
@@ -160,7 +176,7 @@
                                        <input type="text"> 
                                     </div>
                                     <div class="right">
-                                        <i class="fa-solid fa-square-check" id="add-tag"></i>
+                                        <i class="fa-solid fa-square-plus" id="add-tag"></i>
                                     </div>
                                 </div>
                                 <div class="tag-container">
@@ -210,24 +226,26 @@
         <!-- footer start-->
         <!-- footer body start-->
         <div class="footer">
-            <div class="footer-body">
-                <div class="logo">
-                    <h2>About Journal</h2>
-                    <h2>World's largest technical professional
-                        organization dedicated to advancing technology
-                        for the benefit of humanity.
-                    </h2>
-                </div>
-                <div class="foot-nav">
-                    <h2>About Journal</h2>
-                    <h2>Learn More About Us</h2>
-                    <h2>Vision & Mission</h2>
-                    <h2>Benefits</h2>
-                    <h2>Support</h2>
-                </div>
-                <div class="foot-nav">
-                    <h2>Sign In</h2>
-                    <h2>Create a new Account</h2>
+            <div class="foot-section">
+                <div class="footer-body">
+                    <div class="logo">
+                        <h2>About Journal</h2>
+                        <h2>World's largest technical professional
+                            organization dedicated to advancing technology
+                            for the benefit of humanity.
+                        </h2>
+                    </div>
+                    <div class="foot-nav">
+                        <a>About Journal</a>
+                        <a>Learn More About Us</a>
+                        <a>Vision & Mission</a>
+                        <a>Benefits</a>
+                        <a>Support</a>
+                    </div>
+                    <div class="foot-nav">
+                        <a>Sign In</a>
+                        <a>Create a new Account</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -245,11 +263,86 @@
     <script>
         //navigation
         hamba = document.querySelector(".menu");
-        hamba.onclick = function () {
-            navitem = document.querySelector(".nav-bar");
-            navitem.classList.toggle("active");
-        };
+             hamba.onclick = function(){
+                 navitem  = document.querySelector(".res-nav-container");
+                 navitem.classList.toggle("active");
+             };
+             hamclose = document.querySelector(".fa-xmark");
+             hamclose.onclick = function(){
+                    closenav =document.querySelector(".res-nav-container");
+                    closenav.classList.toggle("active");
+             };
+
         //navigation end
+
+        //input fields
+
+        var auth_add_body = document.getElementById("auth-add");
+        var add_fields = document.getElementById("add");
+
+        function removeInput(){
+            this.parentElement.remove();
+        }
+        
+        add_fields.onclick =function(){
+            var auth_name = document.createElement("input");
+            auth_name.type="text";
+            auth_name.name="authname[]";
+
+            var auth_insitute = document.createElement("input");
+            auth_insitute.type="text";
+            auth_insitute.name="institute[]";
+
+            var auth_radio = document.createElement("input");
+            auth_radio.type="radio";
+            auth_radio.name="auth_type";
+            auth_radio.value="main";
+
+                //remove author
+            const btn=document.createElement("div");
+            btn.className="delete";
+           
+            const btn_icon = document.createElement("button");
+            btn_icon.type="button";
+            btn_icon.className="btn_icon";
+            btn_icon.innerHTML="&times";
+            
+            btn.addEventListener("click",removeInput);
+                //remove author
+
+            const auth=document.createElement("div");
+            auth.className="auth";
+
+            
+            /*const label1=document.createElement("label");
+            label1.type="label";
+            label1.className="label1";
+            label1.for="opt1";
+            label1.innerHTML="main";*/
+            const names=document.createElement("div");
+            names.className="names";
+
+            const auth_selection=document.createElement("div");
+            auth_selection.className="auth-selection";
+
+            const institues=document.createElement("div");
+            institues.className="institues";
+
+            const main=document.createElement("div");
+            main.className="main";
+
+            names.appendChild(auth_name);
+            institues.appendChild(auth_insitute);
+            main.appendChild(auth_radio);
+            btn.appendChild(btn_icon);
+            auth.appendChild(names);
+            auth.appendChild(institues);
+            auth_selection.appendChild(main);
+            auth.appendChild(auth_selection);
+            //main.appendChild(label1);
+            auth.appendChild(btn);
+            auth_add_body.appendChild(auth);
+        };
     </script>
     <script src="js/main.js"></script>
 </body>

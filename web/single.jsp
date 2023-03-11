@@ -20,8 +20,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet"> 
 
     <!-- Icon Font Stylesheet -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- Template Stylesheet -->
     <link href="css/main.css" rel="stylesheet">
@@ -33,7 +32,7 @@
         <!-- top bar start-->
         <div class="top-bar">
             <div class="top-bar-left">
-                <a href="index.jsp"><h1>JOURNAL</h1></a>
+                <h1>JOURNAL</h1>
                 <p>Platform for Engineering and Technology Researchers</p>
             </div>
             <div class="top-bar-right">
@@ -44,6 +43,22 @@
             </div>
             <div class="menu">
                 <i class="fas fa-bars"></i>
+            </div>
+            <div class="res-nav-container">
+                <div class="rsponsive-nav">
+                    <div class="responsive-nav-links">
+                        <i class="fa-solid fa-xmark"></i>
+                        <ul>
+                            <a href="#"><li>Research Topics</li></a>
+                            <a href="#"> <li>Publications</li></a>
+                            <a href="#"><li>Help</li></a>
+                            <a href="#"><li>About Us</li></a>
+                            <a href="#"><li>Contact Us</li></a>
+                            <a href="#"><li><img src="img/icon/shopping-cart-30.png"></li> </a>
+                            <a href="login.jsp"></a> <li><img src="img/icon/icons8-user-30.png"></li> </a> 
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
         <!-- top bar end-->
@@ -63,8 +78,8 @@
                     </div>
                 </div>
                 <div class="nav-right">
-                        <img src="img/icon/shopping-cart-30.png">
-                        <img src="img/icon/icons8-user-30.png">
+                        <a href="#"><img src="img/icon/shopping-cart-30.png"></a>    
+                    <a href="login.jsp"><img src="img/icon/icons8-user-30.png"></a>  
                 </div>
             </div>
         </div>
@@ -72,6 +87,7 @@
 
         <!-- main content start-->
         <div class="content">
+            <div class="content-body">
             <div class="topic-header">
                 <h1>
                     A Location Cloaking Algorithm Based on 
@@ -152,33 +168,35 @@
             <!-- details side end-->
             </div>
         </div>
+    </div>
         <!-- main content end-->
 
-        <!-- footer start-->
-        <!-- footer body start-->
-        <div class="footer">
+       <!-- footer body start-->
+       <div class="footer">
+        <div class="foot-section">
             <div class="footer-body">
                 <div class="logo">
                     <h2>About Journal</h2>
-                    <h2>World's largest technical professional 
+                    <h2>World's largest technical professional
                         organization dedicated to advancing technology
-                         for the benefit of humanity.
+                        for the benefit of humanity.
                     </h2>
-                </div> 
-                <div class="foot-nav">
-                    <h2>About Journal</h2>
-                    <h2>Learn More About Us</h2>
-                    <h2>Vision & Mission</h2>
-                    <h2>Benefits</h2>
-                    <h2>Support</h2>
                 </div>
                 <div class="foot-nav">
-                    <h2>Sign In</h2>
-                    <h2>Create a new Account</h2>
+                    <a>About Journal</a>
+                    <a>Learn More About Us</a>
+                    <a>Vision & Mission</a>
+                    <a>Benefits</a>
+                    <a>Support</a>
+                </div>
+                <div class="foot-nav">
+                    <a>Sign In</a>
+                    <a>Create a new Account</a>
                 </div>
             </div>
         </div>
-        <!-- footer body end-->
+    </div>
+    <!-- footer body end-->
         
         <!-- copyright bar start-->
         <div class="copyright">
@@ -189,14 +207,18 @@
     </div>
     <!-- container end-->
     
-    <!--ham menu script-->
     <script>
-    hamba = document.querySelector(".menu");
-    hamba.onclick = function(){
-        navitem  = document.querySelector(".nav-bar");
-        navitem.classList.toggle("active");
-    }
+   hamba = document.querySelector(".menu");
+             hamba.onclick = function(){
+                 navitem  = document.querySelector(".res-nav-container");
+                 navitem.classList.toggle("active");
+             };
+             hamclose = document.querySelector(".fa-xmark");
+             hamclose.onclick = function(){
+                    closenav =document.querySelector(".res-nav-container");
+                    closenav.classList.toggle("active");
+             };
+
     </script>
-    <!--ham menu script end-->
-    </body>
+</body>
 </html>

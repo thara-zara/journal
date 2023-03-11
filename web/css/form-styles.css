@@ -25,6 +25,7 @@
     max-width: 800px;
     margin: 20px;
     border-radius: 10px;
+    height:auto;
     overflow-y:scroll ;
 }
 .payment-container::-webkit-scrollbar{
@@ -33,7 +34,7 @@
 .payment-details{
     background: #ffff;
     width: 100%;
-    max-height:100vh;
+   
     overflow-x:scroll ;
 }
 .payment-details::-webkit-scrollbar{
@@ -169,7 +170,15 @@
 span .mark{
     color: red;
 }
-
+@media screen and (max-height:700px){
+    .payment-body{
+        width: 100%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
 @media screen and (max-width:600px) {
     .payment-methods button{
         gap: 5px;

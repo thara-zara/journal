@@ -44,6 +44,24 @@
             <div class="menu">
                 <i class="fas fa-bars"></i>
             </div>
+            
+            <div class="res-nav-container">
+                <div class="rsponsive-nav">
+                    <div class="responsive-nav-links">
+                        <i class="fa-solid fa-xmark"></i>
+                        <ul>
+                            <a href="#"><li>Research Topics</li></a>
+                            <a href="#"> <li>Publications</li></a>
+                            <a href="#"><li>Help</li></a>
+                            <a href="#"><li>About Us</li></a>
+                            <a href="#"><li>Contact Us</li></a>
+                            <a href="#"><li><img src="img/icon/shopping-cart-30.png"></li> </a>
+                            <a href="login.jsp"></a> <li><img src="img/icon/icons8-user-30.png"></li> </a> 
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
         </div>
         <!-- top bar end-->
 
@@ -62,8 +80,8 @@
                     </div>
                 </div>
                 <div class="nav-right">
-                        <img src="img/icon/shopping-cart-30.png">
-                        <img src="img/icon/icons8-user-30.png">
+                    <a href="#"><img src="img/icon/shopping-cart-30.png"></a>    
+                    <a href="login.jsp"><img src="img/icon/icons8-user-30.png"></a>  
                 </div>
             </div>
         </div>
@@ -100,30 +118,39 @@
                 <h1>Our Services</h1>
                 <div class="service-top">
                     <div class="service-card">  
-           
-                    <i class="fa-solid fa-people-roof"></i>
+                        <div class="icon-body">
+                            <i class="fa-solid fa-people-roof"></i>
+                        </div>
                         <h2>Management</h2>
                         <p>description about service (Access the resources and opportunities you need to keep on top of changes in technology)</p>
                     </div>
                     <div class="service-card">
-                        <i class="fa-solid fa-flask"></i>
+                        <div class="icon-body">
+                           <i class="fa-solid fa-flask"></i> 
+                        </div>
                         <h2>Science</h2>
                         <p>description about service (Access the resources and opportunities you need to keep on top of changes in technology)</p>
                     </div>
                 </div>
                 <div class="service-btm">
                     <div class="service-card">
-                        <i class="fa-solid fa-microchip"></i>
+                        <div class="icon-body">
+                            <i class="fa-solid fa-microchip"></i>
+                        </div>
                         <h2>Technology</h2>
                         <p>description about service (Access the resources and opportunities you need to keep on top of changes in technology)</p>
                     </div>
                     <div class="service-card">
-                        <i class="fa-solid fa-trowel-bricks"></i>
+                        <div class="icon-body">
+                            <i class="fa-solid fa-trowel-bricks"></i>
+                        </div>
                         <h2>Engineering</h2>
                         <p>description about service (Access the resources and opportunities you need to keep on top of changes in technology)</p>
                     </div>
                     <div class="service-card">
-                        <i class="fa-solid fa-wave-square"></i>
+                        <div class="icon-body">
+                            <i class="fa-solid fa-wave-square"></i>
+                        </div>
                         <h2>Mathematics</h2>
                         <p>description about service (Access the resources and opportunities you need to keep on top of changes in technology)</p>
                     </div>
@@ -142,9 +169,61 @@
                         <div class="arti">
                             <img src="img/img/Rectangle 8.png">
                         </div>
+                        <span class="description"> 
+                            <p>A Novel Algorithm to Extract Fetal QRS in Real Time Using Periodic Trend Feature Time Using Periodic Trend Feature</p>
+                            <span class="read-more2">
+                                <a href="single.jsp">read more <i class="fa-solid fa-arrow-right"></i></a>
+                            </span>
+                        </span>
+                        <span class="read-more">
+                            <a href="single.jsp">read more <i class="fa-solid fa-arrow-right"></i></a>
+                        </span>
+                    </div>
+                    <div class="article-card">
+                        <div class="arti">
+                            <img src="img/img/Rectangle 12.png">
+                        </div>
+                        <span class="description"> 
+                            <p>A Novel Algorithm to Extract Fetal QRS in Real Time Using Periodic Trend Feature Time Using Periodic Trend Feature</p>
+                            <span class="read-more2">
+                                <a href="single.jsp">read more <i class="fa-solid fa-arrow-right"></i></a>
+                            </span>
+                        </span>
+                        <span class="read-more">
+                            <a href="single.jsp">read more <i class="fa-solid fa-arrow-right"></i></a>
+                        </span>
+                    </div>
+                    <div class="article-card">
+                        <div class="arti">
+                            <img src="img/img/Rectangle 13.png">
+                        </div>
+                        <span class="description"> 
+                            <p>A Novel Algorithm to Extract Fetal QRS in Time Using Periodic Trend Feature Real Time Using Periodic Trend Feature</p>
+                            <span class="read-more2">
+                                <a href="single.jsp">read more <i class="fa-solid fa-arrow-right"></i></a>
+                            </span>
+                        </span>
+                        <span class="read-more">
+                            <a href="single.jsp">read more <i class="fa-solid fa-arrow-right"></i></a>
+                        </span>
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!--
+
+
+<div class="article-cards">
+                    <div class="article-card">
+                        <div class="arti">
+                            <img src="img/img/Rectangle 8.png">
+                        </div>
                         <div class="arti-text">
-                            <p>A Novel Algorithm to Extract Fetal QRS in Real Time Using Periodic Trend Feature</p>
-                        <a href="#">Read More</a>
+                            <p>A Novel Algorithm to Extract A Novel Algorithm to Extract  Fetal QRS in Real Time Using Periodic Trend Feature</p>
+                             <a href="#">read more</a>
                         </div>
                         
                     </div>
@@ -154,7 +233,7 @@
                         </div>
                         <div class="arti-text">
                             <p>A Novel Algorithm to Extract Fetal QRS in Real Time Using Periodic Trend Feature </p>
-                        <a href="#">Read More</a>
+                             <a href="#">read more</a>
                         </div>
                     </div>
                     <div class="article-card">
@@ -163,13 +242,11 @@
                         </div>
                         <div class="arti-text">
                             <p>A Novel Algorithm to Extract Fetal QRS in Real Time Using Periodic Trend Feature</p>
-                        <a href="#">Read More</a>
+                            <a href="#">read more</a>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-
+        -->
         <div class="member-wrapper">
             <div class="member-section">
                 <div class="member-body">
@@ -182,7 +259,7 @@
                     </div>
                     <div class="mem-right">
                         <div class="img">
-                            <img src="img/img/Rectangle 29.png" alt="">
+                            <img src="img/img/hands.png" alt="">
                         </div>
                     </div>
                 </div>
@@ -253,7 +330,7 @@
                 <div class="author-join-body">
                     <div class="author-left">
                         <div class="img">
-                            <img src="img/img/Rectangle 35.png" alt="">
+                            <img src="img/img/man-writing.png" alt="">
                         </div>
                     </div>
                     <div class="author-right">
@@ -280,19 +357,18 @@
                         </h2>
                     </div>
                     <div class="foot-nav">
-                        <h2>About Journal</h2>
-                        <h2>Learn More About Us</h2>
-                        <h2>Vision & Mission</h2>
-                        <h2>Benefits</h2>
-                        <h2>Support</h2>
+                        <a>About Journal</a>
+                        <a>Learn More About Us</a>
+                        <a>Vision & Mission</a>
+                        <a>Benefits</a>
+                        <a>Support</a>
                     </div>
                     <div class="foot-nav">
-                        <h2>Sign In</h2>
-                        <h2>Create a new Account</h2>
+                        <a>Sign In</a>
+                        <a>Create a new Account</a>
                     </div>
                 </div>
             </div>
-        
         </div>
         <!-- footer body end-->
 
@@ -302,5 +378,20 @@
         </div>
         <!-- copyright bar end-->
         <!-- footer end-->
+
+
+        <script>
+            hamba = document.querySelector(".menu");
+             hamba.onclick = function(){
+                 navitem  = document.querySelector(".res-nav-container");
+                 navitem.classList.toggle("active");
+             }
+             hamclose = document.querySelector(".fa-xmark");
+             hamclose.onclick = function(){
+                    closenav =document.querySelector(".res-nav-container");
+                    closenav.classList.toggle("active");
+             }
+
+        </script>
 </body>
 </html>

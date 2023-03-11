@@ -12,7 +12,7 @@
         <title>JSP Page</title>
         <link rel="stylesheet" href="css/login.css">
     </head>
-    <body>
+   <body>
     <div class="login-container">
         <div class="log-form">
             <form>
@@ -21,11 +21,11 @@
                     <h5>Member Signin</h5>
                     <div class="username ">
                         <h2>Username</h2>
-                        <input type="text">
+                        <input type="text" required>
                     </div>
                     <div class="password ">
                         <h2>Password</h2>
-                        <input type="password">
+                        <input type="password"  required>
                     </div>
                     <div class="submit-btn">
                             <button>Signin</button>

@@ -30,7 +30,7 @@
                             <h3>Rs 16,000.00</h3>
                         </div>
                         <div class="transaction">
-                            <button>Payment Transactions</button>  
+                            <a href="payment-details.jsp"> <button>Payment Transactions</button>  </a>
                         </div>
                     </div>
                 </div>

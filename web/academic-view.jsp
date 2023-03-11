@@ -28,8 +28,9 @@
 
     </head>
 <body>
-        
-<div class="academic-container">
+    <div class="academic-container">
+
+   
     <!-- top bar start-->
     <div class="top-bar">
         <div class="top-bar-left">
@@ -44,6 +45,22 @@
         </div>
         <div class="menu">
             <i class="fas fa-bars"></i>
+        </div>
+        <div class="res-nav-container">
+            <div class="rsponsive-nav">
+                <div class="responsive-nav-links">
+                    <i class="fa-solid fa-xmark"></i>
+                    <ul>
+                        <a href="#"><li>Research Topics</li></a>
+                        <a href="#"> <li>Publications</li></a>
+                        <a href="#"><li>Help</li></a>
+                        <a href="#"><li>About Us</li></a>
+                        <a href="#"><li>Contact Us</li></a>
+                        <a href="#"><li><img src="img/icon/shopping-cart-30.png"></li> </a>
+                        <a href="login.jsp"></a> <li><img src="img/icon/icons8-user-30.png"></li> </a> 
+                    </ul>
+                </div>
+            </div>
         </div>
     </div>
     <!-- top bar end-->
@@ -63,170 +80,196 @@
                 </div>
             </div>
             <div class="nav-right">
-                <img src="img/icon/shopping-cart-30.png">
-                <img src="img/icon/icons8-user-30.png">
+                 <a href="#"><img src="img/icon/shopping-cart-30.png"></a>    
+                    <a href="login.jsp"><img src="img/icon/icons8-user-30.png"></a>  
             </div>
         </div>
     </div>
     <!-- nav bar end-->
 
-
-    <div class="link">
-        <p>Academic > Research > Submitted research</p>
-    </div>
-
-    <div class="header">
-        <h2>Submitted Research</h2>
-    </div>
-
-    <div class="tabs">
-        <div class="tab">
-            <button>Management</button>
-            <button>Science</button>
-            <button>Technology</button>
-            <button>Mathermatics</button>
-            <button>Engineering</button>
-        </div>
-    </div>
-
+    <div class="ac">
+        <!--<div class="link">
+            <p>Academic > Research > Submitted research</p>
+        </div>-->
     
-    <div class="table-body">    
-    <div class="table-head">
-        <h3>MSTEM submitted list</h3>
-    </div>
-
-    <div class="selected-view-modal" id="myModal">
-        <div class="view-body">
-            <div class="modal-head">
-                <h2>Research Name</h2>   
-                <i class="fa-solid fa-xmark close"></i>
+        <div class="header">
+            <h2>Submitted Research</h2>
+        </div>
+    
+        <div class="tabs">
+            <div class="tab">
+                <button>Management</button>
+                <button>Science</button>
+                <button>Technology</button>
+                <button>Mathermatics</button>
+                <button>Engineering</button>
             </div>
-            <form>
-                <div class="box">
-                    <i class="fa-solid fa-square"></i>
-                    <p>Publish</p>
+        </div>
+    
+    
+        <div class="table-body">
+            <div class="table-head">
+                <h3>MSTEM submitted list</h3>
+            </div>
+    
+            <div class="selected-view-modal" id="myModal">
+                <div class="view-body">
+                    <div class="modal-head">
+                        <h2>Research Name</h2>
+                        <i class="fa-solid fa-xmark close"></i>
+                    </div>
+                    <form>
+                        <div class="box">
+                            <i class="fa-solid fa-square"></i>
+                            <p>Publish</p>
+                        </div>
+                        <div class="publish">
+                            <label for="publish-input">Publish Number</label>
+                            <input type="text" id="publish-input">
+                            <button>publish</button>
+                        </div>
+                        <div class="box">
+                            <i class="fa-solid fa-square"></i>
+                            <p>Comment</p>
+                        </div>
+                        <div class="comment">
+                            <textarea></textarea>
+                            <button>Send Comment to Author</button>
+                        </div>
+                    </form>
                 </div>
-                <div class="publish">
-                    <label for="publish-input">Publish Number</label>
-                    <input type="text" id="publish-input">
-                     <button>publish</button>
-                </div>
-                <div class="box">
-                    <i class="fa-solid fa-square"></i>
-                    <p>Comment</p>
-                </div>
-                <div class="comment">
-                    <textarea></textarea>
-                    <button>Send Comment to Author</button>
-                </div>
-            </form>
+            </div>
+            <!--                     table body                          -->
+            <div class="table">
+                <table>
+                    <tr>
+                        <th>Research name</th>
+                        <th>Submitted date </th>
+                        <th>Author name</th>
+                        <th>Status</th>
+                        <th>View</th>
+                    </tr>
+                    <tr>
+                        <td>Researche 1</td>
+                        <td>2023/02/05</td>
+                        <td>jhon doe</td>
+                        <!--test colors-->
+                        <td style="color: #B7A820;">Pending Review</td>
+                        <!--test colors-->
+                        <td class="btn"><button class="myBtn">view</button></td>
+                    </tr>
+                    <tr>
+                        <td>Researche 1</td>
+                        <td>2023/02/25</td>
+                        <td>jhons does</td>
+                        <!--test colors-->
+                        <td style="color: #7FDC7D;">approved</td>
+                        <!--test colors-->
+                        <td class="btn"><button class="myBtn">view</button></td>
+                    </tr>
+                    <tr>
+                        <td>Researche 1</td>
+                        <td>2023.03.01</td>
+                        <td>dr damith</td>
+                        <!--test colors-->
+                        <td style="color: #FF0000;">Reviewed</td>
+                        <!--test colors-->
+                        <td class="btn"><button class="myBtn">view</button></td>
+                    </tr>
+                    <tr>
+                        <td>Researche 1</td>
+                        <td>Date</td>
+                        <td>Author name</td>
+                        <!--test colors-->
+                        <td style="color: #0E4156;">Submitted</td>
+                        <!--test colors-->
+                        <td class="btn"><button class="myBtn">view</button></td>
+                    </tr>
+                    <tr>
+                        <td>Researche 1</td>
+                        <td>2023/02/25</td>
+                        <td>jhons does</td>
+                        <!--test colors-->
+                        <td style="color: #7FDC7D;">approved</td>
+                        <!--test colors-->
+                        <td class="btn"><button class="myBtn">view</button></td>
+                    </tr>
+                    <tr>
+                        <td>Researche 1</td>
+                        <td>2023.03.01</td>
+                        <td>dr damith</td>
+                        <!--test colors-->
+                        <td style="color: #0E4156;">Submitted</td>
+                        <!--test colors-->
+                        <td class="btn"><button class="myBtn">view</button></td>
+                    </tr>
+                    <tr>
+                        <td>Researche 1</td>
+                        <td>2023.03.01</td>
+                        <td>dr damith</td>
+                        <!--test colors-->
+                        <td style="color: #FF0000;">Reviewed</td>
+                        <!--test colors-->
+                        <td class="btn"><button class="myBtn">view</button></td>
+                    </tr>
+                    <tr>
+                        <td>Researche 1</td>
+                        <td>2023/02/25</td>
+                        <td>jhons does</td>
+                        <!--test colors-->
+                        <td style="color: #7FDC7D;">approved</td>
+                        <!--test colors-->
+                        <td class="btn"><button class="myBtn">view</button></td>
+                    </tr>
+                    <tr>
+                        <td>Researche 1</td>
+                        <td>2023.03.01</td>
+                        <td>dr damith</td>
+                        <!--test colors-->
+                        <td style="color: #0E4156;">Submitted</td>
+                        <!--test colors-->
+                        <td class="btn"><button class="myBtn">view</button></td>
+                    </tr>
+                    <tr>
+                        <td>Researche 1</td>
+                        <td>Date</td>
+                        <td>Author name</td>
+                        <!--test colors-->
+                        <td style="color: #B7A820;">Pending Review</td>
+                        <!--test colors-->
+                        <td class="btn"><button class="myBtn">view</button></td>
+                    </tr>
+                </table>
+                <!--                     table body   end                        -->
+            </div>
         </div>
     </div>
-    <!--                     table body                          -->
-    <div class="table">
-        <table>
-            <tr>
-                <th>Research name</th>
-                <th>Submitted date </th>
-                <th>Author name</th>
-                <th>Status</th>
-                <th>View</th>
-            </tr>
-            <tr>
-                <td>Researche 1</td>
-                <td>2023/02/05</td>
-                <td>jhon doe</td>
-                <!--test colors-->
-                <td style="color: #B7A820;">Pending Review</td>
-                <!--test colors-->   
-                <td class="btn"><button class="myBtn">view</button></td>
-            </tr>
-            <tr>
-                <td>Researche 1</td>
-                <td>2023/02/25</td>
-                <td>jhons does</td>
-                <!--test colors-->
-                <td style="color: #7FDC7D;">approved</td>
-                <!--test colors-->
-                <td class="btn"><button class="myBtn">view</button></td>
-            </tr>
-            <tr>
-                <td>Researche 1</td>
-                <td>2023.03.01</td>
-                <td>dr damith</td>
-                <!--test colors-->
-                <td style="color: #FF0000;">Reviewed</td>
-                <!--test colors-->
-                <td class="btn"><button class="myBtn">view</button></td>
-            </tr>
-            <tr>
-                <td>Researche 1</td>
-                <td>Date</td>
-                <td>Author name</td>
-                <!--test colors-->
-                <td style="color: #0E4156;">Submitted</td>
-                <!--test colors-->
-                <td class="btn"><button class="myBtn">view</button></td>
-            </tr>
-            <tr>
-                <td>Researche 1</td>
-                <td>2023/02/25</td>
-                <td>jhons does</td>
-                <!--test colors-->
-                <td style="color: #7FDC7D;">approved</td>
-                <!--test colors-->
-                <td class="btn"><button class="myBtn">view</button></td>
-            </tr>
-            <tr>
-                <td>Researche 1</td>
-                <td>2023.03.01</td>
-                <td>dr damith</td>
-                <!--test colors-->
-                <td style="color: #0E4156;">Submitted</td>
-                <!--test colors-->
-                <td class="btn"><button class="myBtn">view</button></td>
-            </tr>
-            <tr>
-                <td>Researche 1</td>
-                <td>Date</td>
-                <td>Author name</td>
-                <!--test colors-->
-                <td style="color: #B7A820;">Pending Review</td>
-                <!--test colors-->
-                <td class="btn"><button class="myBtn">view</button></td>
-            </tr>
-        </table>
-         <!--                     table body   end                        -->
-    </div>
-</div>
-
     <!-- footer body start-->
-    <div class="footer">
-        <div class="foot-section">
-            <div class="footer-body">
-                <div class="logo">
-                    <h2>About Journal</h2>
-                    <h2>World's largest technical professional
-                        organization dedicated to advancing technology
-                        for the benefit of humanity.
-                    </h2>
-                </div>
-                <div class="foot-nav">
-                    <h2>About Journal</h2>
-                    <h2>Learn More About Us</h2>
-                    <h2>Vision & Mission</h2>
-                    <h2>Benefits</h2>
-                    <h2>Support</h2>
-                </div>
-                <div class="foot-nav">
-                    <h2>Sign In</h2>
-                    <h2>Create a new Account</h2>
+        <div class="footer">
+            <div class="foot-section">
+                <div class="footer-body">
+                    <div class="logo">
+                        <h2>About Journal</h2>
+                        <h2>World's largest technical professional
+                            organization dedicated to advancing technology
+                            for the benefit of humanity.
+                        </h2>
+                    </div>
+                    <div class="foot-nav">
+                        <a>About Journal</a>
+                        <a>Learn More About Us</a>
+                        <a>Vision & Mission</a>
+                        <a>Benefits</a>
+                        <a>Support</a>
+                    </div>
+                    <div class="foot-nav">
+                        <a>Sign In</a>
+                        <a>Create a new Account</a>
+                    </div>
                 </div>
             </div>
         </div>
-    
-    </div>
-    <!-- footer body end-->
+        <!-- footer body end-->
 
     <!-- copyright bar start-->
     <div class="copyright">
@@ -237,29 +280,41 @@
 </div>
 
 
-        <script>
-            //nav
-            hamba = document.querySelector(".menu");
-            hamba.onclick = function () {
-                navitem = document.querySelector(".nav-bar");
-                navitem.classList.toggle("active");
-            };
+<script>
+    //nav
+    hamba = document.querySelector(".menu");
+             hamba.onclick = function(){
+                 navitem  = document.querySelector(".res-nav-container");
+                 navitem.classList.toggle("active");
+             };
+             hamclose = document.querySelector(".fa-xmark");
+             hamclose.onclick = function(){
+                    closenav =document.querySelector(".res-nav-container");
+                    closenav.classList.toggle("active");
+             };
+
+
             //modal
             var modal = document.getElementById("myModal");
             var btn = document.getElementsByClassName("myBtn");
+
             var span = document.getElementsByClassName("close")[0];
-            for (let i = 0; i < btn.length; i++)
-            {
+
+            for(let i = 0;i < btn.length; i++)
+                {
                 let v = btn[i];
-                v.onclick = function () {
+                v.onclick = function() {
                     modal.style.display = "block";
                     console.log("clicked");
                 };
-            }
-            span.onclick = function () {
-                modal.style.display = "none";
+                }
+
+            span.onclick = function() {
+            modal.style.display = "none";
             };
-        </script>
-    </body>
+
+    
+</script>
+</body>
 
 </html>
