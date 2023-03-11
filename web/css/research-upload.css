@@ -19,6 +19,7 @@ body{
     background: radial-gradient(84.19% 471.43% at 15.81% 45.43%, #219EBC 11.77%, rgba(200, 211, 132, 0) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */, #D9D9D9;
     width: 100%;
     margin-bottom: 0px;
+    position: relative;
 }
 .submit-hero-body{
     margin-right: 22px;
@@ -54,6 +55,7 @@ body{
     font-size: 32px;
     font-weight: 700;
     color: #ffff;
+
 }
 .submit-hero-left .btm button{
     padding: 6px 34px 5px 38px;
@@ -69,6 +71,24 @@ body{
     color: var(--primary);
     background: #ffff;
 }
+.submit-hero-right{
+    display: flex;
+    margin-top: 20px;
+}
+.submit-hero .polisies{
+    position:absolute;
+    right: 25px;
+    top:25px;
+    margin-bottom: 20px;
+}
+.polisies span{
+    padding: 8px 30px;
+    background: var(--dark);
+    color:#ffff;
+    border-radius:15px;
+    cursor:pointer;
+}
+
 .form{
     display: flex;
     max-width: 1200px;
@@ -235,6 +255,42 @@ body{
  } 
 
     
+ 
+ 
+ 
+ .category{
+   display: flex;
+    margin-top: 25px;
+    gap:50px;
+ }
+ .category select{
+     -webkit-border:none;
+     cursor: pointer;
+     padding: 5px 20px;
+     text-align: left;
+ }
+ .category select option{
+     font-size: 18px;
+     padding: 10px;
+ }
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
 /**********************************/
 
 .req{
@@ -690,6 +746,21 @@ body{
      .form-body form {
         margin: 20px 10px 0px 10px;
      }
+     
+     
+     
+     
+ .category{
+    gap:25px;
+ }
+ .category select{
+     padding: 5px 20px;
+ }
+ .category select option{
+     font-size: 16px;
+ }
+ 
+ 
 
 }
 

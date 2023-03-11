@@ -96,11 +96,14 @@
                         <button>History </button>
                     </div>
                 </div>
-                <div class="submit-hero-right">
+                <div class="submit-hero-right"> 
                     <div class="submit-hero-right-img">
                         <img src="img/img/png-market-research-2 1.png">
                     </div>
                 </div>
+            </div>
+            <div class="polisies">
+                <span>Guides</span>
             </div>
         </div>
     <!--                       form section             -->
@@ -112,12 +115,24 @@
                         <input type="text">
                     </div>
                     <div class="area topic">
-                        <h3>Research Topic * : </h3>
+                        <h3>Research Topic <span class="req">*</span> : </h3>
                         <input type="text">
                     </div>
+                    <!---- select category ---->
+                    <div class="category">
+                        <h3>Category <span class="req">*</span> :</h3>
+                        <select>
+                            <option>Engineering</option>
+                            <option>Mathematics</option>
+                            <option>Management</option>
+                            <option>Technology</option>
+                            <option>Science</option> 
+                        </select>
+                    </div>
+                    <!---- select category ---->
                     <div class="authors">
                         <div class="auth-auth">
-                            <h3>Authors * :</h3>
+                            <h3>Authors <span class="req">*</span> :</h3>
                         </div>
                         <div class="auth-add-body" id="auth-add">
                             <div class="auth">
@@ -133,7 +148,7 @@
                                 </div>
                                 <!--author select-->
                                 <div class="auth-selection">
-                                    <h3> type</h3>
+                                    <h3>main </h3>
                                     <div class="main">
                                         <input type="radio" value="main" name="auth_type" id="opt1">
                                          <!-- <label for="opt1" class="label1">main </label>   -->
@@ -147,9 +162,11 @@
                             </div>
                         </div>
                     </div>
+                    
+                    
                       <!--upload photo-->
                     <div class="upload-photo">
-                        <h3>Relevant Photograph * :</h3>
+                        <h3>Relevant Photograph <span class="req">*</span> :</h3>
                         <div class="photo">
                             <input type="file" name="file" id="file" class="input-file">
                             <div class="custom">
@@ -160,7 +177,7 @@
                     </div>
                      <!--description-->
                     <div class="description">
-                        <h3>Abstract * :</h3>
+                        <h3>Abstract <span class="req">*</span> :</h3>
                         <div class="description-body">
                             <textarea>  </textarea>
                         </div>
@@ -191,7 +208,7 @@
                     </div>
                         <!--upload paper-->
                     <div class="document">
-                        <h3>Research Paper * :</h3>
+                        <h3>Research Paper <span class="req">*</span> :</h3>
                         <div class="document-upload">
                             <input type="file">
                             <div class="doc-custom">

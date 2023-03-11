@@ -56,7 +56,7 @@
                             <a href="#"><li>About Us</li></a>
                             <a href="#"><li>Contact Us</li></a>
                             <a href="#"><li><img src="img/icon/shopping-cart-30.png"></li> </a>
-                            <a href="login.jsp"></a> <li><img src="img/icon/icons8-user-30.png"></li> </a> 
+                            <a href="login.jsp"><li><img src="img/icon/icons8-user-30.png"></li> </a> 
                         </ul>
                     </div>
                 </div>
