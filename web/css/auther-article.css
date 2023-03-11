@@ -1,0 +1,223 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+:root {
+    --primary: #06A3DA;
+    --secondary: #F57E57;
+    --light: #EEF9FF;
+    --dark: #091E3E;
+    --dark2: #0E4156;
+}
+body{
+    min-height: 100vh;
+}
+a{
+    text-decoration: none;
+}
+.auther-article{
+    width: 100%;
+}
+.profile-body{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.auther-article-head{
+    display: flex;
+    background: #FFFFFF;
+    box-shadow: 1px 1px 20px -10px rgba(0, 0, 0, 0.25);
+    margin: 25px 25px 25px 25px;
+    align-items: center;
+    gap: 100px;
+    padding: 15px 10px 15px 10px;
+    height: 220px;
+}
+.head-left{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    gap: 20px;
+    margin-left: 50px;
+}
+.profile{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.profile img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+.head-left h2{
+    font-size: 18px;
+    color: #091E3E;
+    text-transform: capitalize;
+}
+.head-right{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.date{
+    display: flex;
+    gap: 10px;
+}
+.date h5{
+    width: 120px;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: capitalize;
+    color: var(--dark);
+}
+.date p{
+    color: #868686;
+    font-size: 16px;
+}
+
+.publish-article-section{
+    background: #FFFFFF;
+    box-shadow: 1px 1px 20px -10px rgba(0, 0, 0, 0.25);
+    margin: 25px 25px 25px 25px;
+    padding: 15px 10px 15px 10px;
+}
+.publish-article-section h3{
+    color: var(--primary);
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.p-card{
+    display: flex;
+    box-shadow: 1px 1px 15px -10px rgba(0, 0, 0, 0.25);
+    border: 1px solid rgb(207, 207, 207);
+    width: 75%;
+    margin-top: 25px;
+    gap: 10px;
+    cursor: pointer;
+    height:auto;
+}
+.p-card-left{
+    
+}
+.p-card-left img{
+    width:150px;
+    height: 100%;
+    object-fit: cover;
+}
+.p-card-right{
+    padding-right: 10px;
+}
+.p-card-right h2{
+    font-size: 18px;
+    color: var(--dark);
+    margin-top: 10px;
+}
+.p-card-right p{
+    margin-top: 20px;
+    color: rgb(0, 0, 0);
+}
+
+@media screen and (max-width:790px) {
+    .p-card{
+        width: 100%;
+    }
+    .auther-article-head{
+        gap: 50px;
+    }
+    .date{
+        display: flex;
+        gap: 5px;
+    }
+    .date p{
+        display: flex;
+        width: 200px;
+        flex-wrap: wrap;
+    }
+    .profile{
+        width: 100px;
+        height: 100px;
+    }
+    .profile img{
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+    }
+
+}
+@media screen and (max-width:620px){
+    .head-left{
+        /* border: 1px solid red; */
+        width: 100%;
+        margin-left: 0px;
+    }
+    .head-right{
+        /* border: 1px solid red; */
+        width: 100%;
+    }
+.auther-article-head{
+    flex-direction: column;
+    height: auto;
+    gap: 20px;
+    justify-content: center;
+
+}
+.date{
+    gap: 25px;
+}
+.date p{
+    width: 75%;
+}
+
+}
+@media screen and (max-width:528px){
+    .p-card-left img{
+        width:100px;
+        height: 100px;
+        object-fit: cover;
+    }
+    .p-card{
+        height: 100px;
+        overflow: hidden;
+    }
+    .p-card-right{
+        padding-right: 0;
+    }
+    .publish-article-section{
+        background: #FFFFFF;
+        box-shadow: 1px 1px 20px -10px rgba(0, 0, 0, 0.25);
+        margin: 25px 25px 25px 25px;
+        padding: 15px 0px 15px 0px;
+    }
+    .date{
+        gap: 10px;
+    }
+    .date h5{
+        font-size: 14px;
+    }
+    .date p{
+        font-size: 14px;
+    }
+}
+@media screen and (max-width:436px){
+.p-card-right h2{
+    font-size: 16px;
+}
+.p-card-right p{
+    font-size: 14px;
+    margin-top: 10px;
+    padding-right: 1px;
+}
+.publish-article-section{
+    margin: 10px 10px 10px 10px;
+}
+.auther-article-head{
+    margin: 10px 10px 10px 10px;
+
+}
+}

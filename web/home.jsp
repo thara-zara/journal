@@ -284,7 +284,7 @@
                             </p>
                         </div>
                         <div class="author-btm">
-                            <a href="#">View Author Profile</a>
+                            <a href="author-article-details-view.jsp">View Author Profile</a>
                         </div>
                     </div>
                     <div class="author-card">
@@ -301,7 +301,7 @@
                             </p>
                         </div>
                         <div class="author-btm">
-                            <a href="#">View Author Profile</a>
+                            <a href="author-article-details-view.jsp">View Author Profile</a>
                         </div>
                     </div>
                     <div class="author-card">
@@ -318,7 +318,7 @@
                             </p>
                         </div>
                         <div class="author-btm">
-                            <a href="#">View Author Profile</a>
+                            <a href="author-article-details-view.jsp">View Author Profile</a>
                         </div>
                     </div>
                 </div>
